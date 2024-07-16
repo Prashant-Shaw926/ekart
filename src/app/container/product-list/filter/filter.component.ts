@@ -1,0 +1,24 @@
+import { Component, Input, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-filter',
+  standalone: true,
+  imports: [FormsModule, CommonModule],
+  templateUrl: './filter.component.html',
+  styleUrl: './filter.component.css'
+})
+export class FilterComponent {
+  @Input()
+  all: number;
+
+  @Input()
+  inStock: number;
+
+  @Input()
+  outOfStock: number;
+
+  selectedFilterRadioButton: string = 'all';
+
+}

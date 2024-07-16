@@ -1,0 +1,16 @@
+.mainMenu{
+    display: flex;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #929292;
+}
+a:hover{
+    color: #000;
+}

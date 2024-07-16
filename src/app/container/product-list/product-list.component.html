@@ -1,0 +1,4 @@
+<app-filter [all] = "allProducts" [inStock] = "inStockProducts" [outOfStock] = "outOfStockProducts"></app-filter>
+<div class="main">
+    <app-product *ngFor="let prod of products" [product] = "prod"></app-product>
+</div>

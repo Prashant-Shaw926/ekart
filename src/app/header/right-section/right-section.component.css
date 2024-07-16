@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+a{
+    /* font-size: 20px; */
+    text-decoration: none;
+    color: #929292;
+}
+a:hover{
+    color: #000;
+}
+
+input{
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #121212;
+}
+
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #121212;
+}

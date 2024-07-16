@@ -1,0 +1,10 @@
+span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #28282B;
+    color: #fff;
+}
