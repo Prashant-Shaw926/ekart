@@ -1,17 +1,9 @@
 <div class="main">
-    <!-- <img [src]="productDetails.pImg">
-    <p>Name: {{productDetails.name}}</p>
-    <p>Price: {{ '$' + productDetails.price}}</p>
-    <p>Color: {{productDetails.color}}</p>
-    <p>Discounted Price: {{ '$' + productDetails.discountedPrice}}</p>
-    <p>Availability: {{productDetails.stock > 0 ? ("Only " + productDetails.stock + " left") : "Out of stock"}}</p>
-    <button (click)="decrementCartValue()" [disabled] = "addToCart==0">-</button>
-    <span>{{addToCart}}</span>
-    <button (click)="IncrementCartValue()" [disabled] = "addToCart==productDetails.stock">+</button> -->
-    <div class="search">
-        <app-search></app-search>
-    </div>
-    <div class="products">
-        <app-product-list></app-product-list>
-    </div>
+  <div class="search">
+    <app-search (selectedFilterSearch)="searchFilter($event)"></app-search>
+  </div>
+  <div class="products">
+    <app-product-list [searchText] = 'searchText' #productListComponent></app-product-list>
+    @if (productListComponent.selectedProduct) {<app-product-detail [productListCom] = 'productListComponent'></app-product-detail>}
+  </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -11,5 +11,18 @@ import { CommonModule } from '@angular/common';
 })
 export class SearchComponent {
   searchText: string = '';
+
+  @Output() selectedFilterSearch = new EventEmitter<string>();
+
+  // onClickSearchButton(event: Event){
+
+  // }
+
+  @ViewChild('searchInput') searchInputElement: ElementRef;
+
+  updateSearchText(){
+    this.searchText = this.searchInputElement.nativeElement.value;
+    this.selectedFilterSearch.emit(this.searchText)
+  }
 
 }
