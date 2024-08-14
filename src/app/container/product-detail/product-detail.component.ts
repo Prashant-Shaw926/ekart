@@ -1,5 +1,6 @@
 import { Component, ElementRef, Input, input } from '@angular/core';
-import { CommonModule, NgIf, NgFor } from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Product } from '../../models/product';
 import { ProductListComponent } from '../product-list/product-list.component';
 
