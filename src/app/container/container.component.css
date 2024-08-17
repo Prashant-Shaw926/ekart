@@ -11,36 +11,34 @@ margin: 0 20px;
 padding: 10px;
 } */
 
-.main{
-    margin: 3% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
+.main {
+  margin: 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
 
-.ekartFeaturedProducts{
-    background-color: #28282b;
-    padding: 20px 10px;
-    display: flex;
+.ekartFeaturedProducts {
+  background-color: #28282b;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
 }
 
-.ekartFeaturedProductsHeading{
-    width: 320px;
-    margin: 10px;
-    padding: 20px 30px;
-    color: #fff;
+.ekartFeaturedProductsHeading {
+  width: 320px;
+  margin: 10px;
+  padding: 20px 30px;
+  color: #fff;
 }
 
-.ekart-featured-product-item {
-    width: 270px;
-    margin: 10px;
-    padding: 20px 30px;
-    background-color: #fff;
-  }
-  
-  .title, .description, .call-to-action {
+.ekartFeaturedProductsList {
+  display: flex;
+}
+
+.title, .call-to-action {
     margin: 10px 0;
   }
   
