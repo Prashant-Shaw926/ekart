@@ -3,11 +3,12 @@ import { NgTemplateOutlet } from '@angular/common';
 import { CommonModule } from '@angular/common';
 import { Product } from '../../models/product';
 import { ProductListComponent } from '../product-list/product-list.component';
+import { setBackground } from '../../customDirective/SetBackground.directive';
 
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [],
+  imports: [setBackground],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
 })
