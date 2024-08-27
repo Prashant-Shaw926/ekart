@@ -4,11 +4,12 @@ import { CommonModule } from '@angular/common';
 import { Product } from '../../models/product';
 import { ProductListComponent } from '../product-list/product-list.component';
 import { setBackground } from '../../customDirective/SetBackground.directive';
+import { AppHoverDirective } from '../../customDirective/app-hover.directive';
 
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [setBackground],
+  imports: [setBackground, AppHoverDirective],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
 })

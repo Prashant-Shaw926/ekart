@@ -15,7 +15,7 @@
       <span setBackground>{{ product.category }}</span>
       <span setBackground>{{ product.brand }}</span>
     </div>
-    <div class="ekart-product-detail-price" >
+    <div class="ekart-product-detail-price">
       <p>
         <b>Price Each Pair:</b>
         <!-- still not fixed -->
@@ -87,11 +87,11 @@
     <ng-template #notifyMeTemplate>
       <button class="btn-add-to-cart">NOTIFY ME</button>
     </ng-template> -->
-    @if(product.is_in_inventory){<button class="btn-add-to-cart">
-      ADD TO CART</button
-    >} @else if (product.is_in_inventory == false) {<button class="btn-add-to-cart">
-      NOTIFY ME</button
-    >}
+    @if(product.is_in_inventory) {
+    <button class="btn-add-to-cart" appAppHover>ADD TO CART</button>
+    } @else if (product.is_in_inventory == false) {
+    <button class="btn-add-to-cart">NOTIFY ME</button>
+    }
     <!-- <ng-template #notifyMeTemplate>
       <button class="btn-add-to-cart">NOTIFY ME</button>
     </ng-template> -->
